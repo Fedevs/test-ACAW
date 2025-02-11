@@ -7,6 +7,7 @@ export default function Home() {
   const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { provider } = AmazonConnectApp.init({
       onCreate: async (event) => {
         const { appInstanceId } = event.context;
